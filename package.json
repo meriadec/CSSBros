@@ -1,8 +1,8 @@
 {
   "name": "cssbros",
-  "description": "CSS dudes to help in common patterns.",
+  "description": "Small CSS dudes to help with common patterns.",
   "repository": "https://github.com/meriadec/CSSBros",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "scripts": {
     "start": "http-server site",
     "deploy": "./deploy.sh"
