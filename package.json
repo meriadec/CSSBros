@@ -1,0 +1,13 @@
+{
+  "name": "cssbros",
+  "description": "CSS dudes to help in common patterns.",
+  "repository": "https://github.com/meriadec/CSSBros",
+  "version": "0.1.0",
+  "scripts": {
+    "start": "http-server site",
+    "deploy": "./deploy.sh"
+  },
+  "devDependencies": {
+    "http-server": "^0.9.0"
+  }
+}

@@ -1,0 +1,160 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  border: none;
+}
+
+body {
+  padding: 2em 20px;
+  color: #555;
+  background: #fafafa;
+  overflow-x: hidden;
+}
+
+strong {
+  font-weight: bold;
+}
+
+a.site-link {
+  color: #DB4662;
+  text-decoration: none;
+  padding-bottom: 3px;
+  border-bottom: 2px solid;
+}
+
+a.site-button {
+  background: #DB4662;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-family: monospace;
+  border-radius: 3px;
+}
+
+code {
+  font-family: monospace;
+  background: #eee;
+  color: #888;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.site-example {
+  margin: 2em 0;
+}
+
+.site-hero {
+  height: 300px;
+}
+
+.site-example-container {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 10px 0 0 10px;
+}
+
+.site-focus {
+  border: 2px solid #DB4662;
+}
+
+.site-example-bloc {
+  background: rgba(0, 0, 0, 0.1);
+  width: 100px;
+  height: 100px;
+  margin: 0 10px 10px 0;
+}
+
+.site-example-bloc.full {
+  width: auto;
+}
+
+.site-too-small {
+  background: #fafafa;
+}
+
+.site-container {
+  max-width: 600px;
+  min-width: 280px;
+  margin: 0 auto;
+}
+
+.site-ball {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3px solid #ddd;
+  margin-right: 1em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.site-section-title {
+  margin-bottom: 1em;
+}
+
+.site-section-title h2 {
+  color: #DB4662;
+}
+
+.site-section-desc {
+  font-style: italic;
+}
+
+.site-section-child {
+  margin-top: 2em;
+  margin-left: 4em;
+}
+
+.site-section-child > .site-section-title > h2 {
+  font-size: 1.2em;
+}
+
+.site-section-child > .site-section-title > .site-ball {
+  width: 30px;
+  height: 30px;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid #ddd;
+  margin: 4em 0;
+}
+
+@media (min-width: 320px) {
+  .site-too-small {
+    display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  .site-container {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .mobile-hidden {
+    display: none;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  hr {
+    margin: 1em 0;
+  }
+}
