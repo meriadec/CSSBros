@@ -6,6 +6,9 @@
   color: inherit;
   background: transparent;
   border: none;
+  cursor: default;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 body {
@@ -17,6 +20,10 @@ body {
 
 strong {
   font-weight: bold;
+}
+
+a {
+  cursor: pointer;
 }
 
 a.site-link {
@@ -41,6 +48,9 @@ code {
   color: #888;
   padding: 4px;
   border-radius: 4px;
+  cursor: text;
+  user-select: text;
+  -webkit-user-select: text;
 }
 
 .site-example {
