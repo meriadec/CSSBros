@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+
+  <title>CSSBros</title>
+
+  <link href="bros.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+
+</head>
+<body>
+
+  <div class="sticky ted site-too-small">
+    Don't even try.
+  </div>
+
+  <div class="site-container">
+
+    <header class="bob">
+      <div class="bobby">
+        <h1>
+          CSSBros
+        </h1>
+        <div class="mobile-hidden">
+          They are <strong>not</strong> a CSS framework.
+        </div>
+      </div>
+      <div>
+        <a target="_blank" href="https://github.com/meriadec/CSSBros" class="site-link">
+          View on GitHub
+        </a>
+      </div>
+    </header>
+
+    <div class="ted site-hero">
+      <div class="bob">
+        <code>
+          npm i cssbros
+        </code>
+        <strong style="margin: 0 1em">
+          or
+        </strong>
+        <a href="" class="site-button" onclick="alert('Lol, seriously dude?')">
+          Download
+        </a>
+      </div>
+    </div>
+
+    <h2 class="site-anchor" id="motivation">
+      <a href="#motivation">
+        Motivation
+      </a>
+    </h2>
+
+    <section class="site-motivation">
+      <p>
+        I'll not try to explain why CSS naming is hard.
+        <a target="_blank" class="site-link" href="https://vimeo.com/99877232">A</a>
+        <a target="_blank" class="site-link" href="http://seesparkbox.com/foundry/naming_css_stuff_is_really_hard">lot</a>
+        <a target="_blank" class="site-link" href="http://philipwalton.com/articles/side-effects-in-css/">of</a>
+        <a target="_blank" class="site-link" href="http://thomasbyttebier.be/blog/less-css-mess">people</a>
+        explain this far better than me.
+      </p>
+      <p>
+        To deal with this problem, you can adopt a naming
+        methodology
+        (<a target="_blank" class="site-link" href="http://getbem.com/naming/">BEM</a>,
+        <a target="_blank" class="site-link" href="https://smacss.com/book/categorizing">SMACSS</a>, etc.).
+        You can use
+        <a target="_blank" class="site-link" href="https://github.com/css-modules/css-modules">CSS Modules</a>
+        to avoid naming conflicts by adding hashes into class names. You can also surrender and use
+        inline style
+        (<a target="_blank" class="site-link" href="http://stack.formidable.com/radium/">Radium</a>,
+        <a target="_blank" class="site-link" href="http://reactcss.com/">ReactCSS</a>, etc.).
+        <strong>
+          That's not the point here.
+        </strong>
+      </p>
+      <p>
+        CSSBros are just little dudes, who will help you in your most common css patterns. I believe
+        that remembering firstnames is easier than remembering keywords. Meet them, and if you like, adopt them.
+      </p>
+    </section>
+
+    <h2 class="site-anchor" id="buddies">
+      <a href="#buddies">
+        Meet the dudes
+      </a>
+    </h2>
+
+    <section>
+
+      <div class="bob site-section-title">
+        <div class="site-ball" style="background-image: url(/CSSBros/images/bob.svg)"></div>
+        <h3 class="bobby">
+          Bob
+        </h3>
+          <code>
+            .bob
+          </code>
+      </div>
+
+      <p class="site-section-desc">
+        Meet Bob. Bob is horizontal. Bob align its children. They are, like, centered.
+      </p>
+
+      <div class="site-example">
+        <div class="site-example-container site-focus bob">
+          <div class="site-example-bloc"></div>
+          <div class="site-example-bloc" style="height: 40px"></div>
+          <div class="site-example-bloc" style="height: 70px"></div>
+        </div>
+      </div>
+
+      <section class="site-section-child">
+
+        <div class="bob site-section-title">
+          <div class="site-ball" style="background-image: url(/CSSBros/images/child.svg)"></div>
+          <h3 class="bobby">
+            Bobby
+          </h3>
+          <code>
+            .bobby
+          </code>
+        </div>
+
+        <p class="site-section-desc">
+          Bobby is growing. It's his only job. Keep growing, dude.
+        </p>
+
+        <div class="site-example">
+          <div class="site-example-container bob">
+            <div class="site-example-bloc site-focus bobby"></div>
+            <div class="site-example-bloc" style="height: 40px"></div>
+            <div class="site-example-bloc" style="height: 70px"></div>
+          </div>
+        </div>
+
+      </section>
+
+    </section>
+
+    <hr />
+
+    <section>
+
+      <div class="bob site-section-title">
+        <div class="site-ball" style="background-image: url(/CSSBros/images/ted.svg)"></div>
+        <h3 class="bobby">
+          Ted
+        </h3>
+          <code>
+            .ted
+          </code>
+      </div>
+
+      <p class="site-section-desc">
+        Inside Ted, everything is centered, vertically and horizontally. Ted like the center. And we like Ted in return.
+      </p>
+
+      <div class="site-example">
+        <div class="site-example-container site-focus ted" style="height: 150px">
+          <div class="site-example-bloc" style="height: 40px"></div>
+          <div class="site-example-bloc" style="height: 80px"></div>
+        </div>
+      </div>
+
+    </section>
+
+    <hr />
+
+    <section>
+
+      <div class="bob site-section-title">
+        <div class="site-ball"></div>
+        <h3 class="bobby">
+          Bill
+        </h3>
+          <code>
+            .bill
+          </code>
+      </div>
+
+      <p class="site-section-desc">
+        Bill acts like a <code>display: block;</code>. His power is revealed
+        when he is used with his son, Billy.
+      </p>
+
+      <div class="site-example">
+        <div class="site-example-container site-focus bill" style="height: 150px">
+          <div class="site-example-bloc full" style="height: 20px"></div>
+          <div class="site-example-bloc full" style="height: 20px"></div>
+          <div class="site-example-bloc full" style="height: 20px"></div>
+        </div>
+      </div>
+
+      <section class="site-section-child">
+
+        <div class="bob site-section-title">
+          <div class="site-ball"></div>
+          <h3 class="bobby">
+            Billy
+          </h3>
+          <code>
+            .billy
+          </code>
+        </div>
+
+        <p class="site-section-desc">
+          Yeah. Just like that, Billy. You grow. But vertically.
+        </p>
+
+        <div class="site-example">
+          <div class="site-example-container bill" style="height: 150px">
+            <div class="site-example-bloc full" style="height: 20px"></div>
+            <div class="site-example-bloc full site-focus billy" style="height: 20px"></div>
+            <div class="site-example-bloc full" style="height: 20px"></div>
+          </div>
+        </div>
+
+      </section>
+
+    </section>
+
+  </div>
+
+</body>
+</html>
