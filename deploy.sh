@@ -11,6 +11,8 @@ echo '> Building'
 cp -r site/* $SITE_FOLDER
 rm $SITE_FOLDER/bros.css
 cp bros.css $SITE_FOLDER
+sed 's/url(\//url(\/CSSBros\//g' $SITE_FOLDER/index.html > $SITE_FOLDER/index_replaced.html
+mv $SITE_FOLDER/index_replaced.html $SITE_FOLDER/index.html
 
 echo '> Deploying'
 cd $SITE_FOLDER && \
