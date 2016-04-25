@@ -9,6 +9,8 @@ mkdir $SITE_FOLDER
 
 echo '> Building'
 cp -r site/* $SITE_FOLDER
+rm $SITE_FOLDER/bros.css
+cp bros.css $SITE_FOLDER
 
 echo '> Deploying'
 cd $SITE_FOLDER && \
@@ -17,7 +19,7 @@ cd $SITE_FOLDER && \
   echo '  - adding files...' && \
   git add . > /dev/null && \
   echo '  - committing...' && \
-  git commit -m "Deploy to GitHub Pages" > /dev/null && \
+  git commit -m "deploy" > /dev/null && \
   echo '  - deploying to github...' && \
   git push --force "${GIT_DEPLOY_REPO}" master:gh-pages > /dev/null 2> /dev/null && \
   echo '> Done! open http://meriadec.github.io/CSSBros/'
