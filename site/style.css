@@ -6,9 +6,6 @@
   color: inherit;
   background: transparent;
   border: none;
-  cursor: default;
-  user-select: none;
-  -webkit-user-select: none;
 }
 
 body {
@@ -22,15 +19,23 @@ strong {
   font-weight: bold;
 }
 
-a {
-  cursor: pointer;
+p + p {
+  margin-top: 1em;
 }
 
 a.site-link {
   color: #DB4662;
   text-decoration: none;
-  padding-bottom: 3px;
+  padding-bottom: 1px;
   border-bottom: 2px solid;
+}
+
+a.site-link:hover {
+  color: #B52F48;
+}
+
+a.site-link:active {
+  color: #8F1D32;
 }
 
 a.site-button {
@@ -42,15 +47,46 @@ a.site-button {
   border-radius: 3px;
 }
 
+a.site-button:hover {
+  background: #B52F48;
+}
+
+a.site-button:active {
+  background: #8F1D32;
+}
+
+.site-anchor a {
+  text-decoration: none;
+  color: #999;
+  border-bottom: 2px solid #ddd;
+  position: relative;
+}
+
+.site-anchor a:before {
+  content: '#';
+  position: absolute;
+  top: 0;
+  left: -25px;
+  opacity: 0;
+  transform: translateX(10px);
+  transition: 200ms ease-out all;
+}
+
+.site-anchor a:hover:before {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.site-anchor a:hover {
+  color: #777;
+}
+
 code {
   font-family: monospace;
   background: #eee;
   color: #888;
   padding: 4px;
   border-radius: 4px;
-  cursor: text;
-  user-select: text;
-  -webkit-user-select: text;
 }
 
 .site-example {
@@ -58,7 +94,13 @@ code {
 }
 
 .site-hero {
-  height: 300px;
+  margin: 150px 0;
+}
+
+.site-motivation {
+  font-size: 1.2em;
+  line-height: 1.7em;
+  color: #333;
 }
 
 .site-example-container {
@@ -106,7 +148,7 @@ code {
   margin-bottom: 1em;
 }
 
-.site-section-title h2 {
+.site-section-title h3 {
   color: #DB4662;
 }
 
@@ -119,7 +161,7 @@ code {
   margin-left: 4em;
 }
 
-.site-section-child > .site-section-title > h2 {
+.site-section-child > .site-section-title > h3 {
   font-size: 1.2em;
 }
 
@@ -133,6 +175,11 @@ h1 {
 }
 
 h2 {
+  font-size: 2em;
+  margin: 2em 0;
+}
+
+h3 {
   font-size: 1.5em;
   font-style: italic;
 }
